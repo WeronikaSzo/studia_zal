@@ -1,11 +1,8 @@
 import pytest
+from locators.LoginPage import LoginPage
 from selenium import webdriver
 
-from page_object_pattern.locators.LoginPage import LoginPage
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-
-from page_object_pattern.locators.locators import TestData
+from locators.locators import TestData
 
 
 class Test_Login():

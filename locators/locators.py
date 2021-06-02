@@ -14,7 +14,6 @@ class SearchResultLocators:
     hotel_names_xpath = "//div[contains(@class,'details')]//h3//a"
     hotel_prices_xpath = "//div[contains(@class,'price')]//span"
 
-
 class TestData:
     CHROME_EXECUTEABLE_PATH = r"C:\Users\Weronika\OWASP ZAP\webdriver\windows\32"
     FIREFOX_EXECUTEABLE_PATH = r"C:\Users\Weronika\Desktop\Aplikacje-testowanie\testowanie aplikacji mobilnych\Katalon_Studio_Windows_64\configuration\resources\drivers\firefox_win64\geckodriver"
@@ -24,4 +23,4 @@ class TestData:
     USER_NAME = "zaliczenie@gmail.com"
     USER_PASSWORD = "Uczelnia123!"
 
-    LOGIN_PAGE_TITLE = "https://panel.e-nocleg.pl/login"
+    LOGIN_PAGE_TITLE = ""

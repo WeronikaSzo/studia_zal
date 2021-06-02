@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-from page_object_pattern.locators.locators import TestData
-from page_object_pattern.pages.login_up import BasePage
+from locators.locators import TestData
+from pages.login_up import BasePage
 
 
 class LoginPage(BasePage):

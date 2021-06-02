@@ -1,9 +1,7 @@
 import pytest
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
 
-from page_object_pattern.locators.locators import TestData
+from locators.locators import TestData
 
 
 @pytest.fixture(params=["chrome", "firefox"], scope='class')

@@ -2,8 +2,9 @@ import pytest
 from selenium import webdriver
 from webdriver_manager import driver
 from webdriver_manager.chrome import ChromeDriverManager
-from page_object_pattern.pages.search_hotel import SearchHotelLocators, SearchHotelPage
-from page_object_pattern.pages.search_results import SearchResultPage
+from pages.search_hotel import SearchHotelPage
+from pages.search_results import SearchResultPage
+
 
 class TestHotelSearch:
 
@@ -17,7 +18,7 @@ class TestHotelSearch:
 
     def test_hotel_search(self, setup):
         self.driver.get("https://e-nocleg.pl/")
-        search_hotel_page = SearchHotelPage(self, driver)
+        search_hotel_page = SearchHotelPage(self.driver)
         search_hotel_page.set_city("Zakopane")
         search_hotel_page.set_date_range("2021-06-05", "2021-06-07")
         search_hotel_page.set_travellers("2")
