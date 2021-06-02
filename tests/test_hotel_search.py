@@ -20,7 +20,7 @@ class TestHotelSearch:
         self.driver.get("https://e-nocleg.pl/")
         search_hotel_page = SearchHotelPage(self.driver)
         search_hotel_page.set_city("Zakopane")
-        search_hotel_page.set_date_range("2021-06-05", "2021-06-07")
+        search_hotel_page.set_date_range("2021-06-25", "2021-06-30")
         search_hotel_page.set_travellers("2")
         search_hotel_page.perform_search()
 
@@ -30,4 +30,3 @@ class TestHotelSearch:
 
         assert hotel_names[0] == 'Grand Podhale Resort&Spa*** - Noclegi Zakopane'
         assert hotel_prices[0] == '70'
-
